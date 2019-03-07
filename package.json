@@ -1,0 +1,30 @@
+{
+  "name": "livingasone-decoder",
+  "version": "1.0.0",
+  "api_version": "1.0.0",
+  "keywords": [
+    "Protocol",
+    "Software"
+  ],
+  "manufacturer": "Living As One",
+  "product": "Decoder",
+  "shortname": "LA1",
+  "description": "Living As One Decoder plugin for Companion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "William Viker <william@bitfocus.io>",
+  "contributors": [
+    "Jake Jones <jake@thejoneses.family>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitfocus/companion-module-livingasone-decoders.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bitfocus/companion-module-livingasone-decoders/issues"
+  },
+  "homepage": "https://github.com/bitfocus/companion-module-livingasone-decoders#readme"
+}
