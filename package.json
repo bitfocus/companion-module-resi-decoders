@@ -14,9 +14,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "William Viker <william@bitfocus.io>",
-  "contributors": [
-    "Jake Jones <jake@thejoneses.family>"
+  "author": "Jake Jones <jake@thejoneses.family>",
   ],
   "license": "MIT",
   "repository": {
