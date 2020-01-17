@@ -101,7 +101,10 @@ instance.prototype.actions = function(system) {
 
 		'play': { label: 'Play' },
 		'pause': { label: 'Pause' },
-
+		'PAFFB': { label: 'Play and Fade From Black' },
+		'FTBAP': { label: 'Fade To Black and Pause' },
+		'FFB': { label: 'Fade From Black' },
+		'FTB': { label: 'Fade To Black' },
 	});
 }
 
@@ -120,6 +123,18 @@ instance.prototype.action = function(action) {
 			break;
 		case 'pause':
 			cmd = 'CC ' + "1:2";
+			break;
+		case 'PAFFB':
+			cmd = 'CC ' + "1:3";
+			break;
+		case 'FTBAP':
+			cmd = 'CC ' + "1:4";
+			break;
+		case 'FFB':
+			cmd = 'CC ' + "1:5";
+			break;
+		case 'FTB':
+			cmd = 'CC ' + "1:6";
 			break;
 	}
 
