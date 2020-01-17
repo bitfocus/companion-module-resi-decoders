@@ -1,27 +1,27 @@
 {
-  "name": "livingasone-decoders",
-  "version": "1.1.0", // updated version number from 1.0.0 to reflect the addition of more commands
-  "api_version": "1.0.0",
-  "keywords": [
-    "Protocol",
-    "Software"
-  ],
-  "manufacturer": "Living As One",
-  "product": "Decoder",
-  "shortname": "LA1",
-  "description": "Living As One Decoder plugin for Companion",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Jake Jones <jake@thejoneses.family>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bitfocus/companion-module-livingasone-decoders.git"
-  },
-  "bugs": {
-    "url": "https://github.com/bitfocus/companion-module-livingasone-decoders/issues"
-  },
-  "homepage": "https://github.com/bitfocus/companion-module-livingasone-decoders#readme"
+	"name": "livingasone-decoders",
+	"version": "1.1.1",
+	"api_version": "1.0.0",
+	"keywords": [
+		"Protocol",
+		"Software"
+	],
+	"manufacturer": "Living As One",
+	"product": "Decoder",
+	"shortname": "LA1",
+	"description": "Living As One Decoder plugin for Companion",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Jake Jones <jake@thejoneses.family>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bitfocus/companion-module-livingasone-decoders.git"
+	},
+	"bugs": {
+		"url": "https://github.com/bitfocus/companion-module-livingasone-decoders/issues"
+	},
+	"homepage": "https://github.com/bitfocus/companion-module-livingasone-decoders#readme"
 }

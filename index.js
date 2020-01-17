@@ -91,7 +91,7 @@ instance.prototype.destroy = function() {
 		self.socket.destroy();
 	}
 
-	debug("destroy", self.id);;
+	debug("destroy", self.id);
 };
 
 
@@ -110,8 +110,6 @@ instance.prototype.actions = function(system) {
 
 instance.prototype.action = function(action) {
 	var self = this;
-	var id = action.action;
-	var opt = action.options;
 
 	// parseInt(action.options.int)
 	var cmd;
