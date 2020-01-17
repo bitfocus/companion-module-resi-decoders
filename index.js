@@ -123,16 +123,16 @@ instance.prototype.action = function(action) {
 			cmd = 'CC ' + "1:2";
 			break;
 		case 'PAFFB':
-			cmd = 'CC ' + "1:3";
+			cmd = 'CC PAFFB';
 			break;
 		case 'FTBAP':
-			cmd = 'CC ' + "1:4";
+			cmd = 'CC FTBAP';
 			break;
 		case 'FFB':
-			cmd = 'CC ' + "1:5";
+			cmd = 'CC FFB';
 			break;
 		case 'FTB':
-			cmd = 'CC ' + "1:6";
+			cmd = 'CC FTB';
 			break;
 	}
 
