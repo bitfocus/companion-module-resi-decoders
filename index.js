@@ -93,9 +93,7 @@ instance.prototype.destroy = function() {
 	debug("destroy", self.id);
 };
 
-/*
-* Define button presets
-*/
+// Define button presets
 instance.prototype.init_presets = function () {
 	var self = this;
 	var presets = [
@@ -203,12 +201,40 @@ instance.prototype.actions = function(system) {
 	var self = this;
 	self.system.emit('instance_actions', self.id, {
 
-		'play': { label: 'Play' },
+		'play' : { label: 'Play' },
 		'pause': { label: 'Pause' },
 		'PAFFB': { label: 'Play and Fade From Black' },
 		'FTBAP': { label: 'Fade To Black and Pause' },
-		'FFB': { label: 'Fade From Black' },
-		'FTB': { label: 'Fade To Black' },
+		'FFB'  : { label: 'Fade From Black' },
+		'FTB'  : { label: 'Fade To Black' },
+		/*
+		'FF'   : {
+			label: 'Seek Forward',
+			options: [
+				{
+					type: 'textinput',
+					label: 'milliseconds',
+					id: 'ffms',
+					default: '5000',
+					regex: self.REGEX_NUMBER
+				}
+			] 
+		},
+		*/
+		/*
+		'RW'   : {
+			label: 'Seek Backward',
+			options: [
+				{
+					type: 'textinput',
+					label: 'milliseconds',
+					id: 'rwms',
+					default: '5000',
+					regex: self.REGEX_NUMBER
+				}
+			]
+		},
+		*/
 	});
 }
 
@@ -238,6 +264,18 @@ instance.prototype.action = function(action) {
 		case 'FTB':
 			cmd = 'CC ' + "FTB";
 			break;
+		/*
+		case 'FF':
+			var ffms = parseInt(opt.ffms);
+			cmd = 'CC FF ' + ffms;
+			break;
+		*/
+		/*	
+		case 'RW':
+			var rwms = ParseInt(opt.rwms);
+			cmd = 'CC RW ' + rwms;
+			break;
+		*/
 	}
 
 	if (cmd !== undefined) {

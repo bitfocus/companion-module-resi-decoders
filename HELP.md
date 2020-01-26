@@ -30,3 +30,11 @@ drag a preset to a button and you are ready to go.
 
 More commands will be added to this Companion module as they
 are supported by Living As One.
+
+
+
+**Future Support**
+It has been suggested that the following commands will be supported in the future.
+
+* Seek Forward (by custom time)
+* Seek Backward (by custom time)
