@@ -26,9 +26,8 @@ instance.prototype.init = function() {
 
 	debug = self.debug;
 	log = self.log;
-
+	self.init_presets();
 	self.status(self.STATE_UNKNOWN);
-
 	self.init_tcp();
 };
 
@@ -71,7 +70,7 @@ instance.prototype.config_fields = function () {
 			id: 'info',
 			width: 12,
 			label: 'Information',
-			value: 'This module uses Rosstalk for communication with Living As One decoders.'
+			value: 'This module controls Living As One DECODERS ONLY via RossTalk.'
 		},
 		{
 			type: 'textinput',
@@ -94,6 +93,111 @@ instance.prototype.destroy = function() {
 	debug("destroy", self.id);
 };
 
+/*
+* Define button presets
+*/
+instance.prototype.init_presets = function () {
+	var self = this;
+	var presets = [
+		{
+			category: 'Controls',
+			label: 'Start playback.',
+			bank: {
+				style: 'text',
+				text: 'LA1\\nPlay',
+				size: '14',
+				color: self.rgb(255,255,255),
+				latch: false
+			},
+			actions: [
+				{
+					action: 'play'
+				}
+			]
+		},
+		{
+			category: 'Controls',
+			label: 'Pause Playback.',
+			bank: {
+				style: 'text',
+				text: 'LA1\\nPause',
+				size: '14',
+				color: self.rgb(255,255,255),
+				latch: false
+			},
+			actions: [
+				{
+					action: 'pause'
+				}
+			]
+		},
+		{
+			category: 'Controls',
+			label: 'Play and Fade From Black.',
+			bank: {
+				style: 'text',
+				text: 'LA1\\nPlay and FFB',
+				size: '8',
+				color: self.rgb(255,255,255),
+				latch: false
+			},
+			actions: [
+				{
+					action: 'PAFFB'
+				}
+			]
+		},
+		{
+			category: 'Controls',
+			label: 'Fade To Black and Pause.',
+			bank: {
+				style: 'text',
+				text: 'LA1\\nFTB and Pause',
+				size: '8',
+				color: self.rgb(255,255,255),
+				latch: false
+			},
+			actions: [
+				{
+					action: 'FTBAP'
+				}
+			]
+		},
+		{
+			category: 'Controls',
+			label: 'Fade From Black.',
+			bank: {
+				style: 'text',
+				text: 'LA1\\nFFB',
+				size: '14',
+				color: self.rgb(255,255,255),
+				latch: false
+			},
+			actions: [
+				{
+					action: 'FFB'
+				}
+			]
+		},
+		{
+			category: 'Controls',
+			label: 'Fade To Black.',
+			bank: {
+				style: 'text',
+				text: 'LA1\\nFTB',
+				size: '14',
+				color: self.rgb(255,255,255),
+				latch: false
+			},
+			actions: [
+				{
+					action: 'FTB'
+				}
+			]
+		},
+	];
+	self.setPresetDefinitions(presets);
+}
 
 instance.prototype.actions = function(system) {
 	var self = this;
@@ -117,22 +221,22 @@ instance.prototype.action = function(action) {
 	switch (action.action) {
 
 		case 'play':
-			cmd = 'CC ' + "1:1";
+			cmd = 'CC ' + "play";
 			break;
 		case 'pause':
-			cmd = 'CC ' + "1:2";
+			cmd = 'CC ' + "pause";
 			break;
 		case 'PAFFB':
-			cmd = 'CC PAFFB';
+			cmd = 'CC ' + "PAFFB";
 			break;
 		case 'FTBAP':
-			cmd = 'CC FTBAP';
+			cmd = 'CC ' + "FTBAP";
 			break;
 		case 'FFB':
-			cmd = 'CC FFB';
+			cmd = 'CC ' + "FFB";
 			break;
 		case 'FTB':
-			cmd = 'CC FTB';
+			cmd = 'CC ' + "FTB";
 			break;
 	}
 
