@@ -1,10 +1,25 @@
 ## Living As One Decoders
 
-This module uses Rosstalk to communicate with Living As One Decoders
+This module controls Living As One DECODERS ONLY via RossTalk.
+
+Please DO NOT use this module to attempt to control Living As One Encoders.
 
 Enter the IP address of the decoder when setting up the instance.
 
 **Available commands**
+
+Some commands are considered to be in "Early Field Trials" by
+Living As One and must be enabled on your decoder by LA1.
+The commands in the Companion instance, generally, will not
+break anything if you try to use them when the features are
+not enabled on your decoder, but please do not chance it as
+there are no guarantees to how your system will respond to
+an unknown command. Play and Pause are generally available
+on all Living As One decoders.
+
+Presets are available for all commands. Currently, there are
+no additional options necessary for the presets. Set up your instance,
+drag a preset to a button and you are ready to go.
 
 * Play
 * Pause
@@ -12,3 +27,6 @@ Enter the IP address of the decoder when setting up the instance.
 * Fade to Black and Pause
 * Fade from Black
 * Fade to Black
+
+More commands will be added to this Companion module as they
+are supported by Living As One.
