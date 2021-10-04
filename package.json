@@ -1,15 +1,18 @@
 {
-	"name": "livingasone-decoders",
+	"name": "resi-decoders",
 	"version": "1.1.2",
 	"api_version": "1.0.0",
 	"keywords": [
 		"Protocol",
 		"Software"
 	],
-	"manufacturer": "Living As One",
+	"legacy": [
+		"livingasone-decoders"
+	],
+	"manufacturer": "Resi",
 	"product": "Decoder",
-	"shortname": "LA1",
-	"description": "Living As One Decoder plugin for Companion",
+	"shortname": "decoder",
+	"description": "Resi Decoder plugin for Companion",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
@@ -18,10 +21,10 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/bitfocus/companion-module-livingasone-decoders.git"
+		"url": "git+https://github.com/bitfocus/companion-module-resi-decoders.git"
 	},
 	"bugs": {
-		"url": "https://github.com/bitfocus/companion-module-livingasone-decoders/issues"
+		"url": "https://github.com/bitfocus/companion-module-resi-decoders/issues"
 	},
-	"homepage": "https://github.com/bitfocus/companion-module-livingasone-decoders#readme"
+	"homepage": "https://github.com/bitfocus/companion-module-resi-decoders#readme"
 }

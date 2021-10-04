@@ -70,12 +70,12 @@ instance.prototype.config_fields = function () {
 			id: 'info',
 			width: 12,
 			label: 'Information',
-			value: 'This module controls Living As One DECODERS ONLY via RossTalk.'
+			value: 'This module controls Resi DECODERS ONLY via RossTalk.'
 		},
 		{
 			type: 'textinput',
 			id: 'host',
-			label: 'LA1 Decoder IP',
+			label: 'Decoder IP',
 			width: 6,
 			regex: self.REGEX_IP
 		},
@@ -102,7 +102,7 @@ instance.prototype.init_presets = function () {
 			label: 'Start playback.',
 			bank: {
 				style: 'text',
-				text: 'LA1\\nPlay',
+				text: 'Decoder\\nPlay',
 				size: '14',
 				color: self.rgb(255,255,255),
 				latch: false
@@ -118,7 +118,7 @@ instance.prototype.init_presets = function () {
 			label: 'Pause Playback.',
 			bank: {
 				style: 'text',
-				text: 'LA1\\nPause',
+				text: 'Decoder\\nPause',
 				size: '14',
 				color: self.rgb(255,255,255),
 				latch: false
@@ -134,7 +134,7 @@ instance.prototype.init_presets = function () {
 			label: 'Play and Fade From Black.',
 			bank: {
 				style: 'text',
-				text: 'LA1\\nPlay and FFB',
+				text: 'Decoder\\nPlay and FFB',
 				size: '8',
 				color: self.rgb(255,255,255),
 				latch: false
@@ -150,7 +150,7 @@ instance.prototype.init_presets = function () {
 			label: 'Fade To Black and Pause.',
 			bank: {
 				style: 'text',
-				text: 'LA1\\nFTB and Pause',
+				text: 'Decoder\\nFTB and Pause',
 				size: '8',
 				color: self.rgb(255,255,255),
 				latch: false
@@ -166,7 +166,7 @@ instance.prototype.init_presets = function () {
 			label: 'Fade From Black.',
 			bank: {
 				style: 'text',
-				text: 'LA1\\nFFB',
+				text: 'Decoder\\nFFB',
 				size: '14',
 				color: self.rgb(255,255,255),
 				latch: false
@@ -182,7 +182,7 @@ instance.prototype.init_presets = function () {
 			label: 'Fade To Black.',
 			bank: {
 				style: 'text',
-				text: 'LA1\\nFTB',
+				text: 'Decoder\\nFTB',
 				size: '14',
 				color: self.rgb(255,255,255),
 				latch: false

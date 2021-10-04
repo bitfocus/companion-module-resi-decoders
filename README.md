@@ -1,2 +1,3 @@
-# companion-module-livingasone-decoders
+# companion-module-resi-decoders
+
 See HELP.md and LICENSE
