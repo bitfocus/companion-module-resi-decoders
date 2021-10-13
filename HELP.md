@@ -12,7 +12,7 @@ Some commands are considered to be in "Early Field Trials" by
 Resi and must be enabled on your decoder by the support team.
 The commands in the Companion instance, generally, will not
 break anything if you try to use them when the features are
-not enabled on your decoder, but please do not change it as
+not enabled on your decoder, but please do not chance it as
 there are no guarantees to how your system will respond to
 an unknown command. Play and Pause are generally available
 on all Resi decoders.
