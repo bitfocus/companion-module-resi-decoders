@@ -9,7 +9,7 @@ Enter the IP address of the decoder when setting up the instance.
 **Available commands**
 
 Some commands are considered to be in "Early Field Trials" by
-Resi and must be enabled on your decoder by LA1.
+Resi and must be enabled on your decoder by the support team.
 The commands in the Companion instance, generally, will not
 break anything if you try to use them when the features are
 not enabled on your decoder, but please do not chance it as
