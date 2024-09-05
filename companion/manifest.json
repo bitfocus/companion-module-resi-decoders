@@ -9,10 +9,6 @@
 	"bugs": "https://github.com/bitfocus/companion-module-resi-decoders/issues",
 	"maintainers": [
 		{
-			"name": "Jake Jones",
-			"email": "jake@thejoneses.family"
-		},
-		{
 			"name": "Joseph Adams",
 			"email": "josephdadams@gmail.com"
 		}
