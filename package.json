@@ -1,30 +1,23 @@
 {
 	"name": "resi-decoders",
-	"version": "1.1.5",
-	"api_version": "1.0.0",
-	"keywords": [
-		"Protocol",
-		"Software"
-	],
-	"legacy": [
-		"livingasone-decoders"
-	],
-	"manufacturer": "Resi",
-	"product": "Decoder",
-	"shortname": "decoder",
-	"description": "Resi Decoder plugin for Companion",
+	"version": "2.0.0",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "prettier -w .",
+		"lint:raw": "eslint --ext .ts --ext .js --ignore-pattern dist --ignore-pattern pkg",
+		"lint": "yarn lint:raw ."
 	},
-	"author": "Jake Jones <jake@thejoneses.family>",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/bitfocus/companion-module-resi-decoders.git"
 	},
-	"bugs": {
-		"url": "https://github.com/bitfocus/companion-module-resi-decoders/issues"
+	"dependencies": {
+		"@companion-module/base": "~1.10.0"
 	},
-	"homepage": "https://github.com/bitfocus/companion-module-resi-decoders#readme"
+	"devDependencies": {
+		"@companion-module/tools": "^2.0.0",
+		"prettier": "^3.3.3"
+	}
 }

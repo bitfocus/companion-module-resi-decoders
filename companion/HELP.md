@@ -4,7 +4,7 @@ This module controls Resi DECODERS ONLY via RossTalk.
 
 Please DO NOT use this module to attempt to control Resi Encoders.
 
-Enter the IP address of the decoder when setting up the instance.
+Enter the IP address of the Decoder when setting up the instance.
 
 **Available commands**
 

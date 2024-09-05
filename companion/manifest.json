@@ -1,0 +1,30 @@
+{
+	"id": "resi-decoders",
+	"name": "resi-decoders",
+	"shortname": "decoder",
+	"description": "Resi Decoder plugin for Companion",
+	"version": "0.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-resi-decoders.git",
+	"bugs": "https://github.com/bitfocus/companion-module-resi-decoders/issues",
+	"maintainers": [
+		{
+			"name": "Jake Jones",
+			"email": "jake@thejoneses.family"
+		},
+		{
+			"name": "Joseph Adams",
+			"email": "josephdadams@gmail.com"
+		}
+	],
+	"legacyIds": ["livingasone-decoders"],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../index.js"
+	},
+	"manufacturer": "Resi",
+	"products": ["Decoder"],
+	"keywords": ["Protocol", "Software"]
+}

@@ -1,2 +1,6 @@
 node_modules/
-.eslintrc
+package-lock.json
+.DS_Store
+/pkg
+/pkg.tz
+.yarn/
