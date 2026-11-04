@@ -1,9 +1,5 @@
-const { Regex } = require('@companion-module/base')
-
 module.exports = {
 	getConfigFields() {
-		let self = this
-
 		return [
 			{
 				type: 'static-text',

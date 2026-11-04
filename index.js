@@ -1,5 +1,5 @@
 // Resi Decoders
-const { InstanceBase, InstanceStatus, runEntrypoint } = require('@companion-module/base')
+const { InstanceBase, runEntrypoint } = require('@companion-module/base')
 const upgrades = require('./src/upgrades')
 
 const config = require('./src/config')
@@ -34,8 +34,8 @@ class ResiDecoderInstance extends InstanceBase {
 
 	async destroy() {
 		try {
-			if (self.socket !== undefined) {
-				self.socket.destroy()
+			if (this.socket !== undefined) {
+				this.socket.destroy()
 			}
 		} catch (error) {
 			this.log('error', 'destroy error:' + error)
