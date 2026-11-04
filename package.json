@@ -3,9 +3,9 @@
 	"version": "2.0.0",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "node --test test/seek.test.js",
 		"format": "prettier -w .",
-		"lint:raw": "eslint --ext .ts --ext .js --ignore-pattern dist --ignore-pattern pkg",
+		"lint:raw": "eslint",
 		"lint": "yarn lint:raw ."
 	},
 	"license": "MIT",
@@ -14,10 +14,16 @@
 		"url": "git+https://github.com/bitfocus/companion-module-resi-decoders.git"
 	},
 	"dependencies": {
-		"@companion-module/base": "~1.10.0"
+		"@companion-module/base": "~1.15.0"
 	},
 	"devDependencies": {
-		"@companion-module/tools": "^2.8.0",
-		"prettier": "^3.3.3"
-	}
+		"@companion-module/tools": "^2.9.0",
+		"prettier": "^3.3.3",
+		"eslint": "^9.39.3"
+	},
+	"prettier": "@companion-module/tools/.prettierrc.json",
+	"engines": {
+		"node": "^26.5"
+	},
+	"packageManager": "yarn@1.22.22"
 }

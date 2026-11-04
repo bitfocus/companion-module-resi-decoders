@@ -1,5 +1,5 @@
 module.exports = [
-	function (context, props) {
+	function (_context, _props) {
 		return {
 			updatedConfig: null,
 			updatedActions: [],

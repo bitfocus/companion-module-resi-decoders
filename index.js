@@ -1,5 +1,5 @@
 // Resi Decoders
-const { InstanceBase, InstanceStatus, runEntrypoint } = require('@companion-module/base')
+const { InstanceBase, runEntrypoint } = require('@companion-module/base')
 const upgrades = require('./src/upgrades')
 
 const config = require('./src/config')

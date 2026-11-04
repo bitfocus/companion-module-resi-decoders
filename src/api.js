@@ -26,7 +26,7 @@ module.exports = {
 					self.log('info', `Connected to Resi Decoder @ ${self.config.host}`)
 				})
 
-				self.socket.on('data', function (data) {})
+				self.socket.on('data', function (_data) {})
 			}
 		} catch (error) {
 			self.log('error', `Error connecting to Resi Decoder: ${error}`)
