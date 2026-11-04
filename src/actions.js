@@ -57,9 +57,9 @@ module.exports = {
 						useVariables: true,
 					},
 				],
-				callback: async function (action, context) {
+				callback: function (action) {
 					let opt = action.options
-					let ffms = parseInt(await context.parseVariablesInString(opt.ffms))
+					let ffms = parseInt(opt.ffms)
 					self.sendCommand('CC FF ' + ffms)
 				},
 			}
@@ -75,9 +75,9 @@ module.exports = {
 						useVariables: true,
 					},
 				],
-				callback: async function (action, context) {
+				callback: function (action) {
 					let opt = action.options
-					let rwms = parseInt(await context.parseVariablesInString(opt.rwms))
+					let rwms = parseInt(opt.rwms)
 					self.sendCommand('CC RW ' + rwms)
 				},
 			}
