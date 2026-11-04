@@ -34,8 +34,8 @@ class ResiDecoderInstance extends InstanceBase {
 
 	async destroy() {
 		try {
-			if (this.socket !== undefined) {
-				this.socket.destroy()
+			if (self.socket !== undefined) {
+				self.socket.destroy()
 			}
 		} catch (error) {
 			this.log('error', 'destroy error:' + error)
